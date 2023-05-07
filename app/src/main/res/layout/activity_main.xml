@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hatter"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/EditTextFNev"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="32dp"
+        android:alpha="0.4"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/user_name"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <EditText
+        android:id="@+id/EditTextJelszo"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/password"
+        android:alpha="0.4"
+        android:inputType="textPassword"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextFNev"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <Button
+        android:id="@+id/buttonBelepes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/login"
+        android:onClick="belepes"
+        android:background="@color/blue"
+        app:backgroundTint="@color/blue_tint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextJelszo" />
+
+    <Button
+        android:id="@+id/buttonRegisztracio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@color/blue"
+        android:text="@string/register"
+        android:onClick="regisztracio"
+        app:backgroundTint="@color/blue_tint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBelepes" />
+    <Button
+        android:id="@+id/buttonBelepesVendeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Belépés vendégként"
+        android:onClick="belepesVendeg"
+        android:background="@color/blue"
+        app:backgroundTint="@color/blue_tint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegisztracio" />
+
+    <Button
+        android:id="@+id/buttonBelepesGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@color/blue"
+        android:text="Belépés Google fiókkal"
+        android:onClick="belepesGoogle"
+        app:backgroundTint="@color/blue_tint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBelepesVendeg" />
+</androidx.constraintlayout.widget.ConstraintLayout>
